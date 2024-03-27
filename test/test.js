@@ -1,5 +1,5 @@
-import {DayTime, Time} from "./Time.js";
-import {convertSecondsToTime} from "./utils.js";
+import {DayTime, Time} from "../src/Time.js";
+import {convertSecondsToTime} from "../src/utils.js";
 import assert from "assert";
 
 describe("Time", () => {
