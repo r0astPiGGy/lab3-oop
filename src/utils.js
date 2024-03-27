@@ -1,6 +1,10 @@
+import {requireNumber} from "./preconditions.js";
+
 const HOURS_IN_DAY = 86400
 
 export function convertSecondsToTime(totalSeconds) {
+    totalSeconds = requireNumber(totalSeconds)
+
     totalSeconds = totalSeconds > 0 ? totalSeconds : HOURS_IN_DAY - (Math.abs(totalSeconds) % HOURS_IN_DAY)
     totalSeconds %= HOURS_IN_DAY
 
