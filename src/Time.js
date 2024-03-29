@@ -96,6 +96,8 @@ export class Time {
         return DayTime.MORNING
     }
 
+    toString = () => `Time[hours=${this.hours}, minutes=${this.minutes}, seconds=${this.seconds}]`
+
     equals = (object) => Time.isEqual(this, object)
 
     static isEqual = (object1, object2) =>
